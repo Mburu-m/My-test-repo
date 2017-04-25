@@ -10,7 +10,7 @@ library(pacman)
 p_load(data.table, stringr, magrittr, stringdist, checkmate, foreach, ggplot2, zoo, knitr, plyr, xlsx, DescTools,
        gridExtra, viridis, plotly, devEMF, jpeg, doBy, dplyr, ggthemes, readxl, stringi, Hmisc,
        doParallel)
-code7 <- setDT(read_excel(p("/Users/mburu/Dropbox/FEDU Graphs/Codebooks/Biweekly7 code.xlsx")))
+code7 <- setDT(read_excel(p(path, "/Users/mburu/Dropbox/FEDU Graphs/Codebooks/Biweekly7 code.xlsx")))
 load(p(path, "/Users/mburu/Desktop/work/repeat/note books/df1.rda"))
 q100 = df[(grep("Q_100$", df$codeq)),]
 q100 = q100[order(q100$bw),]
